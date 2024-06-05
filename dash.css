@@ -1,0 +1,130 @@
+body{
+  margin: 0;
+  background-color: beige;
+}
+
+#uiSec[data-open = "true"]{
+  width: 100%;
+  display: inline-block;
+  background-color: purple;
+  height:fit-content;
+}
+
+#uiSec[data-open = "false"]{
+  display:none;
+}
+
+.uiItem{
+  background-color: red;
+  width: 100%;
+  height: 7vh;
+  display: inline-block;
+}
+#toDoSection{
+  width: 60vw;
+  height:90vh;
+  position: absolute;
+  top:5vh;
+  left:5vw;
+  background-color: rgb(230, 205, 167);
+  
+  border-radius: 4%;
+  border: 0.4vmin solid rgba(189, 169, 139, 0.855);
+  overflow-y: scroll;
+}
+
+#nextDT{
+  /*  NextDt -> next due task
+      block which states next due task */
+  background-color:purple;
+  height:35vh;
+  width: 25vw;
+  position: absolute;
+  right:5vw;
+  top: 5vh;
+}
+
+#completed{
+  background-color:rgb(244, 244, 20);
+  height:50vh;
+  width: 25vw;
+  position: absolute;
+  right:5vw;
+  bottom:5vh;
+}
+
+#TDheader{
+  display: inline-block;
+  border-bottom: 0.2vh solid rgba(0,0,0,0.3);
+  height: 10%;
+  width: 95%;
+}
+
+#TDtitle{
+  display: inline-block;
+  position: absolute;
+  top:2.5%;
+  left:1%;
+  padding: 0;
+  margin: 0;
+}
+
+#addButton,
+#cancelButton{
+  display: inline-block;
+  position: absolute;
+  top:2.5%;
+  right:5%;
+  height:5%;
+  width:20%;
+  border-radius: 999em;
+}
+
+#cancelButton{
+  display: none;
+}
+
+
+.items{
+  background-color: rgb(252, 231, 199);
+  border: 2px solid rgba(0,0,0,0.3);
+  border-radius: 0.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 5vh;
+  width:98%;
+  display: inline-block;
+  top:0;
+  left:0;
+
+}
+
+.tags{
+  background-color: yellow;
+  width:2%;
+  height: 100%;
+  top:10px;
+  display: inline-block;
+}
+
+.titles{
+  display: inline-block;
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.descriptions{
+  display: inline-block;
+  width:50%;
+  height:100%;
+}
+
+.dueDates{
+  display: inline-block;
+}
+
+.finishButtons{
+  width:1vw;
+  height: 1vh;
+  background-color: red;
+}

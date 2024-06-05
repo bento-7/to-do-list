@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dash.css">
+</head>
+<body>
+    <div id = "toDoSection" class = "sections">
+        <!-- THe main list of tasks -->
+        <!-- TD - To Do -->
+
+    <div id = "TDheader">
+        <h1 id = "TDtitle">To Do List</h1>
+        <button onclick = "addItem()" id = "addButton">
+         <p>
+            <span id = "plus">+</span>
+            Add Task
+         </p>   
+        </button>
+        <button onclick = "cancel()" id = "cancelButton">
+            <p>
+               Cancel
+            </p>   
+           </button>
+    </div>
+    <form>
+        <div id = "uiSec" data-open = "false">
+            <input type = "color" name = "UIcolor" id = "UIcolor">
+          <input type = "text" placeholder = "Insert Title Here" minlength = "1" name = "UItext" id = "UItext" required>
+          <input type = "text" placeholder = "Description" name = "UIdesc" id = "UIdesc">
+
+        <input type = "date" name = "UIdate" id = "UIdate" required>
+          <button id = "submitButton" onclick = "submitTask()">Create</button>
+          
+
+        </div>
+</form>
+    <div class = "tdSec" id = "overdue">
+        <!-- tdSec -> To DO section -->
+        <h1>Overdue Tasks: <span id = "overdueCntr"></span></h1>
+
+    </div>
+
+    <div class = "tdSec" id = "dueSoon">
+        <h1>Tasks Due Soon:</h1>
+        <!-- <div class = "items" id = "testItem">
+            <div class = "tags" id = "tag"></div>
+            <div class = "titles" id = "itemTitle"><h1>Test</h1></div>
+            <div class = "descriptions" id = "itemDesc">Lorem ipsum Lorem ipsum dolor sit amet consectetur, adipisicing </div>
+            <div class = "dueDates" id = "dueDate">26/09/2007</div>
+            <button class = "finishButtons" id = "finish"></button>
+        </div> -->
+    </div>
+    <div class = "tdSec" id = "dueLater">
+        <h1>Tasks Due Later:</h1>
+    </div>
+
+    <div class = "tdSec" id = "tdCompleted">
+        <h1>Tasks Completed:</h1>
+
+    </div>
+
+    </div>
+    <div id = "nextDT" claas = "sections">
+        <!--    DT -- Due Task 
+                Tells user when 
+                and what the next
+                Due task is-->
+
+    </div>
+    
+    <div id = "completed" class = "sections">
+        <!-- Shows the amount of tasks completed lifetime -->
+    </div>
+
+
+
+
+
+    <script src = "dash.js"></script>
+</body>
+</html>
